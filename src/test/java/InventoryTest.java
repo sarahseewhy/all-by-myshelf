@@ -22,6 +22,8 @@ public class InventoryTest {
 
         inventory.add(item);
 
-        assertThat(inventory.getItems().size(), is(1));
+        Integer expectedInventorySize = inventory.getItems().size();
+
+        assertThat(expectedInventorySize, is(1));
     }
 }
