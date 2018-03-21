@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class InventoryImpl implements Inventory {
+public class GroceryListImpl implements GroceryList {
 
     private List<Item> items = new ArrayList<>();
 
-    public InventoryImpl() {
+    public GroceryListImpl() {
     }
 
     @Override
