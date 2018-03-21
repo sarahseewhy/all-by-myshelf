@@ -7,18 +7,17 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class GroceryListTest {
 
+    private Item item = new ItemImpl();
+    private GroceryList groceryList = new GroceryListImpl();
+
     @Test
     public void groceryListIsEmpty() {
-        GroceryList groceryList = new GroceryListImpl();
 
         assertThat(groceryList.getItems(), is(new ArrayList<Item>()));
     }
 
     @Test
     public void addItemToGroceryList() {
-
-        Item item = new ItemImpl();
-        GroceryList groceryList = new GroceryListImpl();
 
         groceryList.add(item);
 
@@ -30,9 +29,6 @@ public class GroceryListTest {
     @Test
     public void removeItemFromGroceryListOfOneItem() {
 
-        Item item = new ItemImpl();
-        GroceryList groceryList = new GroceryListImpl();
-
         groceryList.add(item);
         groceryList.remove(item);
 
@@ -40,4 +36,5 @@ public class GroceryListTest {
 
         assertThat(expectedGroceryListSize, is(0));
     }
+
 }
