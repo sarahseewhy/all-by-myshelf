@@ -13,4 +13,15 @@ public class InventoryTest {
 
         assertThat(inventory.getItems(), is(new ArrayList<Item>()));
     }
+
+    @Test
+    public void addItemToInventory() {
+
+        Item item = new ItemImpl();
+        Inventory inventory = new InventoryImpl();
+
+        inventory.add(item);
+
+        assertThat(inventory.getItems().size(), is(1));
+    }
 }

@@ -24,3 +24,6 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# directory to use as a scratch pad (e.g., trailling different data-modelling json objects)
+scratch-pad/*
