@@ -8,14 +8,14 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class GroceryListTest {
 
     @Test
-    public void inventoryIsEmpty() {
+    public void groceryListIsEmpty() {
         GroceryList groceryList = new GroceryListImpl();
 
         assertThat(groceryList.getItems(), is(new ArrayList<Item>()));
     }
 
     @Test
-    public void addItemToInventory() {
+    public void addItemToGroceryList() {
 
         Item item = new ItemImpl();
         GroceryList groceryList = new GroceryListImpl();
