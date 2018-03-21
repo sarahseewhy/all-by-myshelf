@@ -28,7 +28,7 @@ public class GroceryListTest {
     }
 
     @Test
-    public void removeItemFromGroceryList() {
+    public void removeItemFromGroceryListOfOneItem() {
 
         Item item = new ItemImpl();
         GroceryList groceryList = new GroceryListImpl();
