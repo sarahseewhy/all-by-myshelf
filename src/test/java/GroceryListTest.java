@@ -26,4 +26,18 @@ public class GroceryListTest {
 
         assertThat(expectedGroceryListSize, is(1));
     }
+
+    @Test
+    public void removeItemFromGroceryList() {
+
+        Item item = new ItemImpl();
+        GroceryList groceryList = new GroceryListImpl();
+
+        groceryList.add(item);
+        groceryList.remove(item);
+
+        Integer expectedGroceryListSize = groceryList.getItems().size();
+
+        assertThat(expectedGroceryListSize, is(0));
+    }
 }

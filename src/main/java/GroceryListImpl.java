@@ -17,4 +17,9 @@ public class GroceryListImpl implements GroceryList {
     public void add(Item item) {
         items.add(item);
     }
+
+    @Override
+    public void remove(Item item) {
+        items.remove(item);
+    }
 }
